@@ -19,8 +19,8 @@ navegador.get("https://trello.com/")
 navegador.maximize_window()
 time.sleep(2)
 # #Encontrar o botão de cookies e clicar
-# botao_cookies = wait.until(EC.element_to_be_clickable((By.ID, "onetrust-accept-btn-handler")))
-# botao_cookies.click()
+botao_cookies = wait.until(EC.element_to_be_clickable((By.ID, "onetrust-accept-btn-handler")))
+botao_cookies.click()
 
 # Selecionar o botão de login
 botao_login = wait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Log In")))
